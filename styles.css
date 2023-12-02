@@ -1,0 +1,231 @@
+.header {
+    background-color: #07097c;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    padding-bottom: 5px;
+}
+
+.header_section {
+    align-items: center;
+    display: flex;
+    justify-content: left;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.header_logo {
+    margin-left: 20px;
+    width: 0%;
+}
+
+.header_title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.header_navbar {
+    height: 30px;
+    background-color: #080950;
+    font-size: 9px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.title_main {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.title_name {
+    text-transform: uppercase;
+}
+
+.subtitle_main {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.navbar_section {
+    align-items: center;
+    background-color: #080950;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: bold;
+    height: 10px;
+}
+
+.main {
+    align-items: center;
+    background-color: #b6b6d3;
+    border: solid;
+    border-color: red;
+    display: flex;
+    justify-content: center;
+    height: 438px;
+    width: 100%;
+}
+
+.main_section {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.card_section {
+    display: flex;
+    background-color: red;
+    padding-left: 2px;
+}
+
+.main_card {
+    align-items: center;
+    background-color: #b6b6d3;
+    border: solid;
+    border-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    margin: 0 auto;
+    max-width: 512px;
+    width: 100%;
+}
+
+.card_button {
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: bold;
+    width: 100px;
+}
+
+.card_matriz {
+    align-items: center;
+    background-color: #6161d8;
+    border: solid;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Dancing Script';
+    font-size: 46px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.card_matriz:hover {
+    background-color: #b6b6d3;
+}
+
+.card_row {
+    display: flex;
+}
+
+.footer {
+    align-items: center;
+    background-color: #07097c;
+    color: #fff;
+    display: flex;
+    font-size: 9px;
+    justify-content: center;
+    height: 30px;
+}
+
+@media only screen and (max-width: 860px) {
+    .header {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 110px;
+        justify-content: center;
+    }
+
+    .header_section {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .header_logo {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .header_title {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .title_main {
+        font-size: 12px;
+    }
+
+    .navbar_section {
+        height: 15px;
+        margin-top: 10px;
+        padding-top: 5px;
+    }
+
+    .main {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 358px;
+        width: 100%;
+    }
+
+    
+    .main_card {
+        height: 410px;
+        max-width: 436px;
+        width: 100%;
+    }
+
+    .card_button {
+        height: 75px;
+        justify-content: center;
+        font-size: 48px;
+        font-weight: bold;
+        width: 70px;
+    }
+}
+
+@media only screen and (max-width: 436px) {
+
+    .main {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 358px;
+        width: 100%;
+    }
+
+    .main_card {
+        height: 310px;
+        max-width: 436px;
+        width: 100%;
+    }
+
+    .card_button {
+        height: 75px;
+        justify-content: center;
+        font-size: 48px;
+        font-weight: bold;
+        width: 70px;
+    }
+}
