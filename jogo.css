@@ -131,6 +131,23 @@
     display: flex;
 }
 
+.return {
+    align-items: center;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.return_link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: bold;
+}
+
 .footer {
     align-items: center;
     background-color: #07097c;
@@ -189,7 +206,7 @@
         width: 100%;
     }
 
-    
+
     .main_card {
         height: 290px;
         max-width: 436px;
@@ -202,6 +219,15 @@
         font-size: 48px;
         font-weight: bold;
         width: 70px;
+    }
+
+    .return {
+        height: 20px;
+    }
+
+    .return_link {
+        font-size: 16px;
+
     }
 }
 
