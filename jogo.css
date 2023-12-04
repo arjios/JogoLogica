@@ -65,10 +65,13 @@
 
 .main {
     align-items: center;
+    background-image: url("assets/images/IncusiBet.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
     background-color: #b6b6d3;
     display: flex;
     justify-content: center;
-    height: 438px;
+    height: 490px;
     width: 100%;
 }
 
@@ -76,19 +79,56 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0 auto;
 }
 
-.video {
-    height: 420px;
-    width: 520px
+.card_section {
+    display: flex;
+    padding-left: 2px;
 }
 
-.video_source {
+.main_card {
+    align-items: center;
+    background-color: #b6b6d3;
     border: solid;
-    border: blue;
-    border: 5px;
+    border-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 360px;
+    margin: 0 auto;
+    max-width: 512px;
+    width: 100%;
+}
+
+.card_button {
+    align-items: center;
+    display: flex;
+    height: 90px;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: bold;
+    width: 90px;
+}
+
+.card_matriz {
+    align-items: center;
+    background-color: #6161d8;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Dancing Script';
+    font-size: 46px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.card_matriz:hover {
+    background-color: #b6b6d3;
+}
+
+.card_row {
+    display: flex;
 }
 
 .footer {
@@ -145,15 +185,24 @@
         align-items: center;
         display: flex;
         justify-content: center;
-        height: 358px;
+        height: 420px;
         width: 100%;
     }
 
-    .video {
-        height: 320px;
-        width: 420px
+    
+    .main_card {
+        height: 290px;
+        max-width: 436px;
+        width: 100%;
     }
 
+    .card_button {
+        height: 70px;
+        justify-content: center;
+        font-size: 48px;
+        font-weight: bold;
+        width: 70px;
+    }
 }
 
 @media only screen and (max-width: 436px) {
@@ -162,14 +211,21 @@
         align-items: center;
         display: flex;
         justify-content: center;
-        height: 358px;
+        height: 370px;
         width: 100%;
     }
-    
-    .video {
-        height: 230px;
-        width: 320px
+
+    .main_card {
+        height: 290px;
+        max-width: 436px;
+        width: 100%;
     }
 
-
+    .card_button {
+        height: 70px;
+        justify-content: center;
+        font-size: 48px;
+        font-weight: bold;
+        width: 70px;
+    }
 }
