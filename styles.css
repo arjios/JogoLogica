@@ -65,10 +65,13 @@
 
 .main {
     align-items: center;
+    background-image: url("assets/images/IncusiBet.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
     background-color: #b6b6d3;
     display: flex;
     justify-content: center;
-    height: 438px;
+    height: 490px;
     width: 100%;
 }
 
