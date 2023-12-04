@@ -10,14 +10,14 @@ https://arjios.github.io/JogoLogica
 A aplicação consiste em um Jogo de tabuleiro de logica, implementado de forma informatizada, de um jogador. No modo manipulavel, existe a possibilidade para um, dois ou quatro jogadores.
 
 ## Layout mobile
-![Mobile 1](https://github.com/arjios/JogoLogica/tree/main/assets/images/Mobile01.png)
+![Mobile 1] (https://github.com/arjios/JogoLogica/tree/main/assets/images/Mobile01.png)
 
-![Mobile 2](https://github.com/arjios/JogoLogica/tree/main/assets/images/Mobile02.png)
+![Mobile 2] (https://github.com/arjios/JogoLogica/tree/main/assets/images/Mobile02.png)
 
 ## Layout web
-![Web 1](https://github.com/arjios/JogoLogica/tree/main/assets/images/Page01.png)
+![Web 1] (https://github.com/arjios/JogoLogica/tree/main/assets/images/Page01.png)
 
-![Web 2](https://github.com/arjios/JogoLogica/tree/main/assets/images/Page02.png)
+![Web 2] (https://github.com/arjios/JogoLogica/tree/main/assets/images/Page02.png)
 
 
 # Tecnologias utilizadas
