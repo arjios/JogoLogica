@@ -86,88 +86,108 @@
     justify-content: center;
     margin: 0 auto;
     max-width: 860px;
+    padding: 10px;
     width: 100%;
 }
 
-.text_instructions {
-    border: 1px solid;
-    border-color: #080950;
-    border-radius: 30px;
-    background-color: #FFFFFF;
-    color: #080950;
-    font-size: 18px;
-    font-weight: bold;
-    height: 460px;
-}
-
-.instructions_titles {
-    align-items:flex-start;
-    display: flex;
-    flex-direction: column;
-    justify-content:flex-start;
-    padding: 10px;
-}
-
-.instructions_description {
-    padding: 10px;
+.card_main {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
 }
 
 .card_buttons {
     align-items: center;
     display: flex;
-    justify-content: space-around;
-    margin-top: 5px;
-    max-width: 600px;
-    margin: 0 auto;
-    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .button_instruction {
     align-items: center;
     background-color: blue;
-    border-radius: 30px;
+    border: 1px solid;
+    border-color: #080950;
+    border-radius: 10px;
     display: flex;
-    font-size: 14px;
-    justify-content: center;
-    height: 30px;
-    margin: 0 auto;
-    width: 100%;
+    justify-content: space-around;
+    padding: 5px;
 }
 
 .button_game {
     align-items: center;
     background-color: blue;
-    border-radius: 30px;
+    border: 1px solid;
+    border-color: #080950;
+    border-radius: 10px;
     display: flex;
-    justify-content: center;
-    height: 30px;
-    margin: 0 auto;
-    width: 100%;
-}
-
-.button_submit:hover {
-    text-shadow: 1px 1px #b6b6d3;
-    cursor: pointer;
-}
-
-.button_game:hover {
-    text-shadow: 1px 1px #b6b6d3;
+    justify-content: space-around;
+    padding: 5px;
 }
 
 .button_submit {
     background-color: blue;
+    border: 1px solid;
+    border-color: #080950;
+    border-radius: 10px;
     border: none;
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
+    color: #fff;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.button_submit:hover {
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
 .button_link {
-    color: #FFFFFF;
+    border: 1px solid;
+    border-color: #080950;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    margin-right: 5px;
     text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
+}
+
+
+.button_link:hover {
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.icon_speak, .icon_start {
+    background-color: #fff;
+    border: 1px solid;
+    border-color: #080950;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+}
+
+.card_text {
+    align-items: center;
+    background-color: #b6b6d3;
+    border-radius: 2%;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    color: #000000;
+    height: 420px;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+}
+
+.text_area {
+    background-color: #000000;
+    border: none;
+    border-radius: 2%;
+    color: yellow;
+    font-size: 15px;
+    height: 380px;
+    resize: none;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
 }
 
 .footer {
@@ -233,7 +253,6 @@
         align-items: center;
         display: flex;
         justify-content: center;
-        height: 358px;
         width: 100%;
     }
 
@@ -250,14 +269,19 @@
         align-items: center;
         display: flex;
         justify-content: center;
-        height: 358px;
         width: 100%;
     }
-    
-    .video {
-        height: 230px;
-        width: 320px
+
+    .button_submit {
+        font-size: 10px;
     }
 
+    .button_link {
+        font-size: 10px;
+    }
+
+    .text_area {
+        font-size: 10px;
+    }
 
 }

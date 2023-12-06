@@ -34,49 +34,44 @@
     </header>
     <main class="main">
         <section class="main_section">
-            <section_card class="text_instructions">
-                <div class="instructions_titles">
-                    <p>Nome do jogo................: Desafio 4x4</p><br>
-                    <p>Objetivo.........................: Colocar todas as peças no tabuleiro</p><br>
-                    <p>Número de jogadores..: Pode ser jogado por um, dois ou quatro jogadores</p><br>
+
+            <section_buttons class="card_main">
+                <div class="card_buttons">
+                    <div class="button_instruction">
+                        <button class="button_submit" id="btn">Instruções do Jogo</button>
+                        <img class="icon_speak" src="assets/images/text_to_speech.png" alt="Converter Texto em Audio">
+                    </div>
+                    <div class="button_game">
+                        <a href="jogo.html" class="button_link">Jogar Desafio 4x4</a>
+                        <img class="icon_start" src="assets/images/start_game.png" alt="Iniciar Jogo">
+                    </div>
                 </div>
-                <div class="instructions_description">
-                    <p>Como jogar</p><br>
-                    <p>1 - Distribuição das peças: As 16 peças,
-                        sendo 4 de cada tipo (4 peças x 4 tipos)
-                        devem ser distribuídas igualmente entre os jogadores.
-                        Por exemplo, se forem dois jogadores, cada um deve receber
-                        oito peças sendo duas de cada tipo. Se forem quatro jogadores,
-                        cada um deve receber quatro peças, sendo uma de cada tipo.
-                        No caso de apenas um jogado, todas as 16
-                        peças devem ser utilizadas.
-                    </p><br>
-                    <p>2 - Inicio do jogo: No caso de mais de um jogador,
-                        defina quem inicia numa disputa de 0 ou 1.
-                        O ganhador da disputa inicia colocando uma peça em qualquer célula do tabuleiro.
-                    </p><br>
-                    <p>3 - Sequência do jogo: O jogo continua no sentido anti-horário.
-                        Os participantes jogam alternadamente,
-                        preenchendo cada um dos espaços vazios sendo que:
-                        peças do mesmo tipo não podem ocupar uma mesma linha, coluna,
-                        diagonal principal ou diagonal secundária.
-                    </p><br>
-                    <p>4 - Fim do jogo: A rodada termina quando não for mais possível
-                        colocar peças no tabuleiro seguindo a regra 3.
-                    </p><br>
-                    <p>5 - Vencedor: Ganha o jogo quem colocar todas as peças antes que os demais jogadores.
-                        No caso de empate, ganha quem tiver o menor número de peças na mão.
-                    </p><br>
-                </div>
+            </section_buttons>
+
+            <section_card class="card_text">
+                <textarea class="text_area" name="roles" id="ta" wrap="hard" readonly>
+                Nome do jogo................: Desafio 4x4
+                Objetivo.........................: Colocar todas as peças no tabuleiro
+                Número de jogadores..: Pode ser jogado por um, dois ou quatro jogadores
+                                        Como jogar
+    1 - Distribuição das peças: As 16 peças, sendo 4 de cada tipo (4 peças x 4 tipos) devem ser distribuídas 
+        igualmente entre os jogadores. Por exemplo, se forem dois jogadores, cada um deve receber oito 
+        peças sendo duas de cada tipo. Se forem quatro jogadores, cada um deve receber quatro peças, 
+        sendo uma de cada tipo. No caso de apenas um jogado, todas as 16 peças devem ser utilizadas.                   
+    2 - Inicio do jogo: No caso de mais de um jogador, defina quem inicia numa disputa de 0 ou 1.
+        O ganhador da disputa inicia colocando uma peça em qualquer célula do tabuleiro.              
+    3 - Sequência do jogo: O jogo continua no sentido anti-horário. Os participantes jogam 
+        alternadamente, preenchendo cada um dos espaços vazios sendo que: peças do mesmo tipo não
+        podem ocupar uma mesma linha, coluna, diagonal principal ou diagonal secundária.
+    4 - Fim do jogo: A rodada termina quando não for mais possível colocar peças no tabuleiro 
+        seguindo a regra 3.     
+    5 - Vencedor: Ganha o jogo quem colocar todas as peças antes que os demais jogadores.
+        No caso de empate, ganha quem tiver o menor número de peças na mão.                          
+                </textarea>
             </section_card>
-            <div class="card_buttons">
-                <div class="button_instruction">
-                    <button class="button_submit" id="btn">Instruções do Jogo (Audio)</button>
-                </div>
-                <div class="button_game">
-                    <a href="jogo.html" class="button_link">Jogar Desafio 4x4</a>
-                </div>
-            </div>
+
+
+
         </section>
     </main>
     <footer class="footer">
