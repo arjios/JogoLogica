@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
     <meta charset="utf-8">
@@ -15,7 +15,7 @@
     <header class="header">
         <section class="header_section">
             <div class="header_logo">
-                <img src="assets/images/logoUFSB.png" height="50" width="220" alt="Logo da UFSB"/>
+                <img src="assets/images/logoUFSB.png" height="50" width="220" alt="Logo da UFSB" />
             </div>
             <div class="header_title">
                 <p class="title_main"><span class="title_name">InclusiBet - </span>Semana dos Jogos Inclusivos</p>
@@ -25,26 +25,64 @@
         </section>
         <section class="navbar_section">
             <nav class="header_navbar">
-                	IJA0372 - OFICINA: MATEMÁTICA E COMPUTAÇÃO A FAVOR DA INCLUSÃO / IJA0178 - Oficina: Torneio de Jogos - T01
+                <span class="title_text">IJA0372 - Oficina: Matemática e Computação a favor da inclusão - T01</span>
+            </nav>
+            <nav class="header_navbar">
+                <span class="title_text">IJA0178 - Oficina: Torneio de Jogos - T01</span>
             </nav>
         </section>
     </header>
     <main class="main">
         <section class="main_section">
-            <div class="video_section">
-                <video class="video" controls>
-                    <source class="video_source" src="assets/videos/VideoTeste.webm" type="video/mp4">
-                </video>
-            </div>
-            <div class="return">
-                <a href="jogo.html" class="return_link">Jogar Desafio 4x4</a>
+            <section_card class="text_instructions">
+                <div class="instructions_titles">
+                    <p>Nome do jogo................: Desafio 4x4</p><br>
+                    <p>Objetivo.........................: Colocar todas as peças no tabuleiro</p><br>
+                    <p>Número de jogadores..: Pode ser jogado por um, dois ou quatro jogadores</p><br>
+                </div>
+                <div class="instructions_description">
+                    <p>Como jogar</p><br>
+                    <p>1 - Distribuição das peças: As 16 peças,
+                        sendo 4 de cada tipo (4 peças x 4 tipos)
+                        devem ser distribuídas igualmente entre os jogadores.
+                        Por exemplo, se forem dois jogadores, cada um deve receber
+                        oito peças sendo duas de cada tipo. Se forem quatro jogadores,
+                        cada um deve receber quatro peças, sendo uma de cada tipo.
+                        No caso de apenas um jogado, todas as 16
+                        peças devem ser utilizadas.
+                    </p><br>
+                    <p>2 - Inicio do jogo: No caso de mais de um jogador,
+                        defina quem inicia numa disputa de 0 ou 1.
+                        O ganhador da disputa inicia colocando uma peça em qualquer célula do tabuleiro.
+                    </p><br>
+                    <p>3 - Sequência do jogo: O jogo continua no sentido anti-horário.
+                        Os participantes jogam alternadamente,
+                        preenchendo cada um dos espaços vazios sendo que:
+                        peças do mesmo tipo não podem ocupar uma mesma linha, coluna,
+                        diagonal principal ou diagonal secundária.
+                    </p><br>
+                    <p>4 - Fim do jogo: A rodada termina quando não for mais possível
+                        colocar peças no tabuleiro seguindo a regra 3.
+                    </p><br>
+                    <p>5 - Vencedor: Ganha o jogo quem colocar todas as peças antes que os demais jogadores.
+                        No caso de empate, ganha quem tiver o menor número de peças na mão.
+                    </p><br>
+                </div>
+            </section_card>
+            <div class="card_buttons">
+                <div class="button_instruction">
+                    <button class="button_submit" id="btn">Instruções do Jogo (Audio)</button>
+                </div>
+                <div class="button_game">
+                    <a href="jogo.html" class="button_link">Jogar Desafio 4x4</a>
+                </div>
             </div>
         </section>
     </main>
     <footer class="footer">
         <P>Grupo de atividades: Antonio / Alexandre / Daniel / Igor / Debora - 2023</P>
     </footer>
-    <script src="script/game.js" async defer></script>
+    <script src="script/index.js" async defer></script>
 </body>
 
 </html>

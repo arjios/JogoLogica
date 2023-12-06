@@ -4,6 +4,7 @@ var v = 0;
 
 var soundError = new Audio("/assets/sounds/error.mp3")
 
+
 // ============================================
 const casa1 = document.getElementById("1")
 casa1.addEventListener('click', (evt) => {
@@ -369,6 +370,9 @@ function verificaDiagonal(lin, col, val) {
     }
     return boo
 }
+
+const leitorText = document.querySelector(".text_instructions")
+console.log("leitorText") 
 
 function errorColor() {
     console.log("Audio de Erro")

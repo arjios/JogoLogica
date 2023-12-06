@@ -65,9 +65,7 @@
 
 .main {
     align-items: center;
-    background-image: url("assets/images/IncusiBet.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
+
     background-color: #b6b6d3;
     display: flex;
     justify-content: center;
@@ -139,6 +137,11 @@
     height: 40px;
     margin: 0 auto;
     width: 100%;
+}
+
+.return:hover {
+    text-shadow: 1px 1px #b6b6d3;
+    box-shadow: 2px 2px 2px 2px #07097c;
 }
 
 .return_link {
