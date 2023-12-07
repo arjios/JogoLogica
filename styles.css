@@ -132,6 +132,8 @@
     border-radius: 10px;
     border: none;
     color: #fff;
+    cursor: pointer;
+    display: flex;
     font-size: 14px;
     margin-right: 5px;
 }
@@ -141,28 +143,52 @@
 }
 
 .button_link {
+    align-items: center;
     border: 1px solid;
     border-color: #080950;
     border-radius: 10px;
     border: none;
+    display: flex;
     color: #fff;
     font-size: 14px;
+    justify-content: space-around;
     margin-right: 5px;
     text-decoration: none;
 }
 
-
 .button_link:hover {
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
-.icon_speak, .icon_start {
+.icon_speak {
     background-color: #fff;
     border: 1px solid;
     border-color: #080950;
     border-radius: 5px;
     border: none;
     color: #fff;
+    margin-left: 5px;
+}
+
+.icon_start {
+    background-color: #fff;
+    border: 1px solid;
+    border-color: #080950;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.icon_speak:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.icon_start:hover {
+    color: blue;
+    cursor: pointer;
 }
 
 .card_text {
