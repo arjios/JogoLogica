@@ -3,7 +3,11 @@ let buttonvoice = document.getElementById("btn")
 
 let textarea = document.getElementById("ta")
 
+let baner = document.getElementById("banner")
+
 textarea.style.visibility = 'hidden'
+
+baner.style.visibility = 'visible'
 
 let instruction = "Bem vindo ao Desafio 4 por 4. O jogo tem como objetivo colocar todas as peças no tabuleiro. e pode ser jogado por um, dois ou quatro jogadores."
 
@@ -20,6 +24,7 @@ let regra04 = "4 - Fim do jogo: A rodada termina quando não for mais possível 
 let regra05 = "5 - Vencedor: Ganha o jogo quem colocar todas as peças antes que os demais jogadores. No caso de empate, ganha quem tiver o menor número de peças na mão."
 
 buttonvoice.addEventListener("click", () => {
+    baner.style.display = 'none'
     textarea.style.visibility = 'visible'
     let ut = new SpeechSynthesisUtterance(instruction)
     window.speechSynthesis.speak(ut)
