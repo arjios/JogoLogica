@@ -2,8 +2,10 @@ var matriz = [["", "", "", ""], ["", "", "", ""], ["", "", "", ""], ["", "", "",
 
 var v = 0;
 
-var soundError = new Audio("/assets/sounds/error.mp3")
+var defeat = new Audio("/assets/sounds/defeat.mp3")
+var victory = new Audio("/assets/sounds/victory.mp3")
 
+let card = document.getElementById(sec)
 
 // ============================================
 const casa1 = document.getElementById("1")
@@ -42,13 +44,12 @@ casaA.addEventListener('click', (evt) => {
         if (isValid(1, 1, v)) {
             casaA.value = v
             matriz[0][0] = v
+            isFinish()
         }
     } else {
         casaA.value = ""
         matriz[0][0] = ""
-        console.log("Entrada invalida")
     }
-    console.log(v)
     evt.defaultPrevented
 })
 
@@ -58,13 +59,13 @@ casaB.addEventListener('click', (evt) => {
         if (isValid(1, 2, v)) {
             casaB.value = v
             matriz[0][1] = v
+            isFinish()
         }
     } else {
         casaB.value = ""
         matriz[0][1] = ""
         console.log("Entrada invalida")
     }
-    console.log(v)
     evt.defaultPrevented
 })
 
@@ -74,13 +75,13 @@ casaC.addEventListener('click', (evt) => {
         if (isValid(1, 3, v)) {
             casaC.value = v
             matriz[0][2] = v
+            isFinish()
         }
     } else {
         casaC.value = ""
         matriz[0][2] = ""
         console.log("Entrada invalida")
     }
-    console.log(casaC.value)
     evt.defaultPrevented
 })
 
@@ -90,13 +91,13 @@ casaD.addEventListener('click', (evt) => {
         if (isValid(1, 4, v)) {
             casaD.value = v
             matriz[0][3] = v
+            isFinish()
         }
     } else {
         casaD.value = ""
         matriz[0][3] = ""
         console.log("Entrada invalida")
     }
-    console.log(casaD.value)
     evt.defaultPrevented
 })
 
@@ -108,13 +109,13 @@ casaE.addEventListener('click', (evt) => {
         if (isValid(2, 1, v)) {
             casaE.value = v
             matriz[1][0] = v
+            isFinish()
         }
     } else {
         casaE.value = ""
         matriz[1][0] = ""
         console.log("Entrada invalida")
     }
-    console.log(casaE.value)
     evt.defaultPrevented
 })
 
@@ -124,13 +125,13 @@ casaF.addEventListener('click', (evt) => {
         if (isValid(2, 2, v)) {
             casaF.value = v
             matriz[1][1] = v
+            isFinish()
         }
     } else {
         casaF.value = ""
         matriz[1][1] = ""
         console.log("Entrada invalida")
     }
-    console.log(casaF.value)
     evt.defaultPrevented
 })
 
@@ -140,13 +141,13 @@ casaG.addEventListener('click', (evt) => {
         if (isValid(2, 3, v)) {
             casaG.value = v
             matriz[1][2] = v
+            isFinish()
         }
     } else {
         casaG.value = ""
         matriz[1][2] = ""
         console.log("Entrada invalida")
     }
-    console.log(casaG.value)
     evt.defaultPrevented
 })
 
@@ -156,13 +157,13 @@ casaH.addEventListener('click', (evt) => {
         if (isValid(2, 4, v)) {
             casaH.value = v
             matriz[1][3] = v
+            isFinish()
         }
     } else {
         casaH.value = ""
         matriz[1][3] = ""
         console.log("Entrada invalida")
     }
-    console.log(casaH.value)
     evt.defaultPrevented
 })
 
@@ -174,13 +175,13 @@ casaI.addEventListener('click', (evt) => {
         if (isValid(3, 1, v)) {
             casaI.value = v
             matriz[2][0] = v
+            isFinish()
         }
     } else {
         casaI.value = ""
         matriz[2][0] = ""
         console.log("Entrada invalida")
     }
-    console.log(casaI.value)
     evt.defaultPrevented
 })
 
@@ -190,13 +191,13 @@ casaJ.addEventListener('click', (evt) => {
         if (isValid(3, 2, v)) {
             casaJ.value = v
             matriz[2][1] = v
+            isFinish()
         }
     } else {
         casaJ.value = ""
         matriz[2][1] = ""
         console.log("Entrada invalida")
     }
-    console.log(casaJ.value)
     evt.defaultPrevented
 })
 
@@ -206,13 +207,13 @@ casaK.addEventListener('click', (evt) => {
         if (isValid(3, 3, v)) {
             casaK.value = v
             matriz[2][2] = v
+            isFinish()
         }
     } else {
         casaK.value = ""
         matriz[2][2] = ""
         console.log("Entrada invalida")
     }
-    console.log(casaK.value)
     evt.defaultPrevented
 })
 
@@ -222,13 +223,13 @@ casaL.addEventListener('click', (evt) => {
         if (isValid(3, 4, v)) {
             casaL.value = v
             matriz[2][3] = v
+            isFinish()
         }
     } else {
         casaL.value = ""
         matriz[2][3] = ""
         console.log("Entrada invalida")
     }
-    console.log(casaL.value)
     evt.defaultPrevented
 })
 
@@ -241,13 +242,13 @@ casaM.addEventListener('click', (evt) => {
         if (isValid(4, 1, v)) {
             casaM.value = v
             matriz[3][0] = v
+            isFinish()
         }
     } else {
         casaM.value = ""
         matriz[3][0] = ""
         console.log("Entrada invalida")
     }
-    console.log(casaM.value)
     evt.defaultPrevented
 })
 
@@ -257,13 +258,13 @@ casaN.addEventListener('click', (evt) => {
         if (isValid(4, 2, v)) {
             casaN.value = v
             matriz[3][1] = v
+            isFinish()
         }
     } else {
         casaN.value = ""
         matriz[3][1] = ""
         console.log("Entrada invalida")
     }
-    console.log(casaN.value)
     evt.defaultPrevented
 })
 
@@ -273,13 +274,13 @@ casaO.addEventListener('click', (evt) => {
         if (isValid(4, 3, v)) {
             casaO.value = v
             matriz[3][2] = v
+            isFinish()
         }
     } else {
         casaO.value = ""
         matriz[3][2] = ""
         console.log("Entrada invalida")
     }
-    console.log(casaO.value)
     evt.defaultPrevented
 })
 
@@ -290,15 +291,29 @@ casaP.addEventListener('click', (evt) => {
         if (isValid(4, 4, v)) {
             casaP.value = v
             matriz[3][3] = v
+            isFinish()
         }
     } else {
         casaP.value = ""
         matriz[3][3] = ""
     }
-    console.log(casaP.value)
     evt.defaultPrevented
 })
 
+function isFinish() {
+    let boo = true
+    console.log("isFinish")
+    for(i=0;i<4;i++) {
+        for(j=0;j<4;j++) {
+            if(matriz[i][j] == "") {
+                boo = false
+            }
+        }
+    }
+    if(boo == true) {
+        victoryGame()
+    }
+}
 
 function isValid(l, c, v) {
     var bo = false
@@ -313,7 +328,7 @@ function isValid(l, c, v) {
     }
 
     if(!bo) {
-        soundError.play()
+        defeat.play()
         alert("Voce perdeu")
         location.reload()
     }
@@ -371,9 +386,7 @@ function verificaDiagonal(lin, col, val) {
     return boo
 }
 
-const leitorText = document.querySelector(".text_instructions")
-console.log("leitorText") 
-
-function errorColor() {
-    console.log("Audio de Erro")
+function victoryGame() {
+    victory.play()
+    setTimeout(alert("Voce Ganhou!!!"), 1000)
 }
